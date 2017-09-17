@@ -1,0 +1,15 @@
+spring:
+  jpa:
+  properties:
+    hibernate:
+      connection:
+        autocommit: false
+      dialect:  org.hibernate.dialect.MySQL5Dialect
+  hibernate: 
+    ddl-auto: update 
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+    validationQuery: SELECT 1
